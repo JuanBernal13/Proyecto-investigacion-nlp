@@ -1,0 +1,19 @@
+{
+  "python": "3.11",
+  "seed": 2026,
+  "data_paths": {"raw": "fuentes", "pilot": "salida"},
+  "source_revisions": {
+    "GSM8K": "3101c7d5072418e28b9008a6636bde82a006892c",
+    "MATH": "7ecc794703b2877f63226f2477a49b34f9b25163"
+  },
+  "source_sha256": {
+    "GSM8K": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+    "MATH": "90d96daeac3fe343ebb1e22ce93dd99690f75983e957f88de42f87cffe1e8076"
+  },
+  "models": [
+    {"id": "Qwen/Qwen2.5-1.5B-Instruct", "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"},
+    {"id": "HuggingFaceTB/SmolLM2-1.7B-Instruct", "revision": "31b70e2e869a7173562077fd711b654946d38674"}
+  ],
+  "protocol_frozen": false,
+  "note": "Revisiones candidatas verificadas por metadatos; pesos no descargados. Configuración de inferencia pendiente del piloto."
+}

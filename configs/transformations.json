@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "implementation_version": "reviewed-spans-v1",
+  "review_policy": "configs/pilot_review_policy.json",
+  "default_output_dir": "data/processed/conditions_v1",
+  "scope": "Only explicitly reviewed pilot spans; no automatic semantic detector",
+  "w_rule": "Double only reviewed single U+0020 prose spaces; preserve all other characters",
+  "human_audit_complete": false,
+  "protocol_frozen": false
+}

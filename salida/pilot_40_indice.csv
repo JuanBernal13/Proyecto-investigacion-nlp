@@ -1,0 +1,41 @@
+﻿id,dataset,split,source_index,original_unique_id,subject,level,has_long_digits
+GSM8K-train-01044,GSM8K,train,1044,,,,True
+GSM8K-train-04043,GSM8K,train,4043,,,,True
+GSM8K-train-00732,GSM8K,train,732,,,,True
+GSM8K-train-00093,GSM8K,train,93,,,,True
+GSM8K-train-05544,GSM8K,train,5544,,,,True
+GSM8K-train-02756,GSM8K,train,2756,,,,True
+GSM8K-train-06649,GSM8K,train,6649,,,,True
+GSM8K-train-03515,GSM8K,train,3515,,,,True
+GSM8K-train-05344,GSM8K,train,5344,,,,True
+GSM8K-train-07455,GSM8K,train,7455,,,,True
+GSM8K-train-06609,GSM8K,train,6609,,,,False
+GSM8K-train-01506,GSM8K,train,1506,,,,False
+GSM8K-train-03270,GSM8K,train,3270,,,,False
+GSM8K-train-01478,GSM8K,train,1478,,,,False
+GSM8K-train-02852,GSM8K,train,2852,,,,False
+GSM8K-train-04882,GSM8K,train,4882,,,,False
+GSM8K-train-01469,GSM8K,train,1469,,,,False
+GSM8K-train-02269,GSM8K,train,2269,,,,False
+GSM8K-train-02369,GSM8K,train,2369,,,,False
+GSM8K-train-05634,GSM8K,train,5634,,,,False
+GSM8K-train-05000,GSM8K,train,5000,,,,False
+GSM8K-train-00628,GSM8K,train,628,,,,False
+GSM8K-train-05245,GSM8K,train,5245,,,,False
+GSM8K-train-05415,GSM8K,train,5415,,,,False
+GSM8K-train-02802,GSM8K,train,2802,,,,False
+GSM8K-train-02478,GSM8K,train,2478,,,,False
+GSM8K-train-00548,GSM8K,train,548,,,,True
+GSM8K-train-02089,GSM8K,train,2089,,,,True
+GSM8K-train-06162,GSM8K,train,6162,,,,False
+GSM8K-train-06784,GSM8K,train,6784,,,,False
+MATH-train-01558,MATH,train,1558,train/intermediate_algebra/1875.json,Intermediate Algebra,1,False
+MATH-train-04775,MATH,train,4775,train/algebra/25115.json,Algebra,2,False
+MATH-train-09539,MATH,train,9539,train/prealgebra/1490.json,Prealgebra,3,True
+MATH-train-11911,MATH,train,11911,test/number_theory/504.json,Number Theory,4,False
+MATH-train-06217,MATH,train,6217,train/counting_and_probability/113.json,Counting & Probability,5,True
+MATH-train-09891,MATH,train,9891,train/geometry/6017.json,Geometry,5,False
+MATH-train-02161,MATH,train,2161,test/precalculus/1.json,Precalculus,5,False
+MATH-train-03841,MATH,train,3841,test/number_theory/128.json,Number Theory,3,True
+MATH-train-10633,MATH,train,10633,train/algebra/965.json,Algebra,3,False
+MATH-train-11018,MATH,train,11018,train/precalculus/135.json,Precalculus,3,False

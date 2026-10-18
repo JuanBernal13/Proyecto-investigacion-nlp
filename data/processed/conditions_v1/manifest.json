@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "run_id": "conditions-da71f2b6-5da7-4f21-bdaa-c1ea483ac398",
+  "timestamp_utc": "2026-11-20T03:59:51.059856+00:00",
+  "status": "completed_with_pending_human_audit",
+  "validation": "passed",
+  "original_files_unchanged": true,
+  "input_hashes": {
+    "fuentes/GSM8K_train.jsonl": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+    "fuentes/MATH_train.jsonl": "90d96daeac3fe343ebb1e22ce93dd99690f75983e957f88de42f87cffe1e8076",
+    "salida/pilot_40_gold.jsonl": "ac46d18f8636335d49a4e506e7247710a0ce744ecb417bf0c40756285d9c8038",
+    "salida/pilot_40_indice.csv": "59e160e310b68a434e3e72baf71c8c9f75449a1afb4a33f5d26606f27cd140cf",
+    "salida/pilot_40_lectura.md": "590dabae45eceaf7568c161d3c7e805cd77c617c1ad6d03833ff6c5b775bb5c4",
+    "salida/pilot_40_procedencia.json": "d616ff2d61665d8ee683afd124e763f874cd72e764879c768bdaa2383fc1e55c",
+    "salida/pilot_40_prompts.jsonl": "2cc75caebe3277784b1158dbfe1ab0bb1dd31d7e4c6b2e07a59370a1fe47a1fa",
+    "configs/pilot_review_policy.json": "344aeb20d635a37deb949fde9f637fbebb47fd2c8be07c2bffcf1fa9289624c5",
+    "data/processed/pilot_40_review_v1.jsonl": "cd545748569c065ab30478691ad5ac1e8ce34dbda209d7a09584d1a64d6ed591",
+    "data/processed/pilot_40_reference_audit_v1.jsonl": "2c48389443ba3a51012527412b411d0f9e1b8e0643e4ae0e2b6ed6f7590f2071",
+    "configs/transformations.json": "6e08b4cea3472983ba669eca7525f83a772521f4d97e442d51d8d0ca7b955cc7",
+    "configs/environment.json": "bf6cf9b695e63e3b47fc9350d8d546a273986b316ca95270865a65b602220d78",
+    "src/transformations/core.py": "7be25933dcfd8ff5cb17609d3028e7c4e4b26efaf3f6359986e205f339e39425",
+    "src/transformations/__init__.py": "4e0b4e3249a537b2af2acc6598d533a2e8bcfc134cd9f8e0e9a54e5d02aa86f1",
+    "scripts/prepare_pilot_conditions.py": "34be108158586f0c7367f662b51b2f43dd9742f0d322e400a0ce820aad610312",
+    "scripts/validate_pilot_review.py": "ad2010359f67aa3ecb7983f9e1250e7d9b3d42101a7fceec2783fdc5b850f436",
+    "scripts/diagnose.py": "ca468a8b43ede4dd1f4f9fa8811e6d84dffadc9e83af5f20949d73d314356fff"
+  },
+  "output_hashes": {
+    "condition_inputs.jsonl": "d522914213eb390a5566aa2a491f4f6d4a3cdcb20b10aa1fad7ca45be3da2ba8",
+    "transformation_audit.jsonl": "d8b9ea7a5456837a168947658d66379386c80680c8bbc2693fec75bcfbfc7347"
+  },
+  "summary": {
+    "problems": 40,
+    "records": 200,
+    "datasets": {
+      "GSM8K": {
+        "problems": 30,
+        "applicable": {
+          "O": 30,
+          "B": 30,
+          "N": 11,
+          "D": 29,
+          "W": 30
+        },
+        "non_applicable": {
+          "no_grouping_change_vs_B": 19,
+          "no_digit_spacing_change_vs_B": 1
+        }
+      },
+      "MATH": {
+        "problems": 10,
+        "applicable": {
+          "O": 10,
+          "B": 2,
+          "N": 1,
+          "D": 2,
+          "W": 10
+        },
+        "non_applicable": {
+          "no_approved_integer": 24,
+          "no_grouping_change_vs_B": 1
+        }
+      }
+    },
+    "numeric_span_checks": 282,
+    "doubled_prose_spaces": 1416,
+    "human_reviews_completed": 0,
+    "rejected_problems": 0,
+    "scope": "value_recovery_and_untouched_context; not_human_semantic_certification"
+  },
+  "protocol_frozen": false,
+  "experiment_ready": false,
+  "model_generations": 0
+}

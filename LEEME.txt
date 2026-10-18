@@ -1,0 +1,64 @@
+PILOTO DE TOKENIZACIÓN MATEMÁTICA — 40 PROBLEMAS REALES
+===================================================
+
+NOTA (19 de noviembre de 2026): documento histórico del paquete original.
+Describe el estado previo a generar la muestra y no refleja el estado actual.
+La documentación vigente, unificada y con lo pendiente está en README.md.
+
+ARCHIVOS INCLUIDOS
+  generar_piloto_40.py   Genera automáticamente una muestra reproducible.
+
+POR QUÉ NO SE INCLUYE YA EL CONTENIDO DE LOS 40 EN ESTE ZIP
+  Las fuentes contienen ~16 MB en conjunto y necesitan descargarse.
+  El entorno que creó este paquete no tiene acceso de descarga directa.
+  El código obtiene los JSONL originales cuando se ejecuta en un equipo
+  con acceso a Internet. No se inventan ni reconstruyen enunciados.
+
+REQUISITOS
+  - Python >= 3.9
+  - Conexión a internet en el primer uso
+  - ~30 MB libres para datos originales y resultados del piloto
+  - No necesitas paquetes pip, GPU o API para descargar los enunciados.
+
+INSTRUCCIONES EN WINDOWS POWERSHELL
+  1. Descomprime esta carpeta.
+  2. Abre PowerShell en esta carpeta.
+  3. Ejecuta: py generar_piloto_40.py
+     Alternativa: python generar_piloto_40.py
+  4. Encuentra los resultados en la subcarpeta salida/.
+
+ARCHIVOS QUE CREA
+  salida/pilot_40_prompts.jsonl     SOLO enunciados y metadatos para el LLM.
+  salida/pilot_40_gold.jsonl        Respuestas y soluciones, NO enviar al LLM.
+  salida/pilot_40_indice.csv        IDs, split, nivel, materia y origen.
+  salida/pilot_40_lectura.md        40 enunciados para leer o revisar.
+  salida/pilot_40_procedencia.json  Semilla, hashes y URLs de fuentes.
+
+DISEÑO DE LA SELECCIÓN
+  - GSM8K: 30 ejemplos de train.jsonl, incluyendo hasta 10 con cadenas
+    de 4 o más dígitos para probar el detector (no se transforman todavía).
+  - MATH: 10 ejemplos de math_splits/train.jsonl, con niveles 1–5 y
+    diversidad de temas. Para el piloto se excluyen problemas con [asy].
+  - Semilla aleatoria: 2026.
+  - No se usan los splits test de GSM8K ni de MATH-500.
+  - Las respuestas de referencia están siempre en un archivo separado.
+
+PRECAUCIÓN: 4+ DÍGITOS NO GARANTIZAN QUE SE PUEDA APLICAR UNA
+TRANSFORMACIÓN. Hay que excluir fechas, unidades, decimales, IDs, etc.
+
+FUENTES ORIGINALES
+GSM8K (OpenAI, MIT):
+https://github.com/openai/grade-school-math
+Archivo: grade_school_math/data/train.jsonl
+
+PRM800K / MATH (OpenAI, MIT en su repositorio de distribución):
+https://github.com/openai/prm800k
+Archivo: prm800k/math_splits/train.jsonl
+Espejo de descarga: https://huggingface.co/datasets/Mai0313/prm800k
+
+El proyecto académico explica la diferencia entre la división MATH
+original y la partición de desarrollo/evaluación PRM800K. Mantener esa
+misma partición permite reservar MATH-500 para la evaluación final.
+
+NO REDISTRIBUIR LOS 40 ENUNCIADOS COMO SI FUERAN PROBLEMAS INÉDITOS.
+Citar las fuentes y conservar las licencias al publicar el experimento.

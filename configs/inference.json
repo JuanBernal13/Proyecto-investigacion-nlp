@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "protocol_frozen": false,
+  "seed": 2026,
+  "do_sample": false,
+  "max_new_tokens": 1024,
+  "max_context_tokens": 4096,
+  "batch_size": 1,
+  "device": "auto",
+  "cuda_dtype": "float16",
+  "cpu_dtype": "float32",
+  "attention_implementation": "eager",
+  "quantization": null,
+  "conditions_dir": "data/processed/conditions_v1",
+  "prompt": "Solve the following mathematics problem. Show your reasoning, then end with exactly one final answer enclosed in <final> and </final>. If <num> tags occur, they delimit a single integer: commas are thousands separators and spaces between its digits are formatting only.\n\nProblem:\n"
+}

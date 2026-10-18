@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "review_id": "pilot40-review-v1",
+  "review_kind": "ai_assisted_case_review",
+  "human_audit_complete": false,
+  "protocol_frozen": false,
+  "proposal_sha256": "40535ff7cead0e2d68a0a82fdaa898b69a8a3ac1cc568f5fcbd32759b081d5cb",
+  "review_path": "data/processed/pilot_40_review_v1.jsonl",
+  "reference_audit_path": "data/processed/pilot_40_reference_audit_v1.jsonl",
+  "offset_convention": "Python Unicode code points, zero-based, half-open [start,end); original unnormalized text",
+  "numeric_policy": "Only explicitly reviewed ASCII digit runs denoting nonnegative whole quantities. Keep currency/percent signs outside tags. Protect dates, decimals, fractions (including mixed and ordinal forms), exponents, identifiers, lists, code and compound or ambiguous notation. Existing comma-grouped integers are protected in this conservative pilot; reconsider before protocol freeze, never split them into partial integers.",
+  "latex_policy": "Only explicitly approved simple integer literals may be tagged; compound LaTeX and tables are protected. No generic LaTeX rewriting.",
+  "w_policy": "Transformation rule: replace only single U+0020 spaces between non-whitespace characters outside protected intervals with two U+0020 spaces; keep existing double spaces and line breaks. Protect math notation, numeric expressions, quantity-unit groups and the entire table. This review only inventories candidate positions.",
+  "contrast_policy": {
+    "B_vs_O": "candidate if any approved numeric span exists",
+    "N_vs_B": "candidate if any approved integer has at least 4 digits",
+    "D_vs_B": "candidate if any approved integer has at least 2 digits",
+    "W_vs_O": "candidate if any permitted single prose space exists"
+  },
+  "allowed_exclusion_reasons": ["date", "decimal", "fraction", "mixed_fraction", "existing_thousands_separator", "compound_latex", "exponent", "numeric_list", "table", "digit_identity_or_rule"],
+  "allowed_protection_reasons": ["numeric_literal", "quantity_unit", "math_notation", "table", "fraction", "mixed_fraction", "decimal", "grouped_integer", "date", "percent"],
+  "limitations": ["Candidate applicability is not certification of transformed texts; the transformation step must verify value recovery and untouched context.", "No token counts or context fit without official model tokenizers.", "No human audit or model outputs are claimed.", "Pilot is enriched; no population weights are inferred."]
+}

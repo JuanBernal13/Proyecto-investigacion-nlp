@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "protocol_frozen": false,
+  "timeout_seconds": 10,
+  "max_response_chars": 100000,
+  "max_answer_chars": 2048,
+  "gsm8k_fallback": "last_nonempty_line_final_answer_is",
+  "math_fallback": "last_complete_boxed",
+  "numeric_tolerance": null,
+  "gold_path": "salida/pilot_40_gold.jsonl"
+}

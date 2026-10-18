@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+# Conservar resultados y datos existentes; no ignorarlos silenciosamente.

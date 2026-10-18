@@ -1,0 +1,78 @@
+{
+  "seed": 2026,
+  "sample": {
+    "GSM8K": 30,
+    "MATH": 10
+  },
+  "restrictions": "Solo train. Se excluyen MATH con Asymptote. Gold nunca va al prompt.",
+  "sources": {
+    "GSM8K_train": {
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+      "download_url": "https://raw.githubusercontent.com/openai/grade-school-math/master/grade_school_math/data/train.jsonl"
+    },
+    "MATH_train": {
+      "sha256": "90d96daeac3fe343ebb1e22ce93dd99690f75983e957f88de42f87cffe1e8076",
+      "download_url": "https://huggingface.co/datasets/Mai0313/prm800k/resolve/main/prm800k/math_splits/train.jsonl?download=true"
+    }
+  },
+  "selected_ids": [
+    "GSM8K-train-01044",
+    "GSM8K-train-04043",
+    "GSM8K-train-00732",
+    "GSM8K-train-00093",
+    "GSM8K-train-05544",
+    "GSM8K-train-02756",
+    "GSM8K-train-06649",
+    "GSM8K-train-03515",
+    "GSM8K-train-05344",
+    "GSM8K-train-07455",
+    "GSM8K-train-06609",
+    "GSM8K-train-01506",
+    "GSM8K-train-03270",
+    "GSM8K-train-01478",
+    "GSM8K-train-02852",
+    "GSM8K-train-04882",
+    "GSM8K-train-01469",
+    "GSM8K-train-02269",
+    "GSM8K-train-02369",
+    "GSM8K-train-05634",
+    "GSM8K-train-05000",
+    "GSM8K-train-00628",
+    "GSM8K-train-05245",
+    "GSM8K-train-05415",
+    "GSM8K-train-02802",
+    "GSM8K-train-02478",
+    "GSM8K-train-00548",
+    "GSM8K-train-02089",
+    "GSM8K-train-06162",
+    "GSM8K-train-06784",
+    "MATH-train-01558",
+    "MATH-train-04775",
+    "MATH-train-09539",
+    "MATH-train-11911",
+    "MATH-train-06217",
+    "MATH-train-09891",
+    "MATH-train-02161",
+    "MATH-train-03841",
+    "MATH-train-10633",
+    "MATH-train-11018"
+  ],
+  "math_distribution": {
+    "subjects": {
+      "Intermediate Algebra": 1,
+      "Algebra": 2,
+      "Prealgebra": 1,
+      "Number Theory": 2,
+      "Counting & Probability": 1,
+      "Geometry": 1,
+      "Precalculus": 2
+    },
+    "levels": {
+      "1": 1,
+      "2": 1,
+      "3": 4,
+      "4": 1,
+      "5": 3
+    }
+  }
+}
